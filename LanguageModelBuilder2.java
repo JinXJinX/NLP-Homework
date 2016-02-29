@@ -29,12 +29,11 @@ public class LanguageModelBuilder2 {
 	static List<TOP> top20Laplace = new ArrayList<TOP>();
 
 	public static void main(String[] args) {
-		System.out.println("type in file path:     e.g.   /Users/jx/Desktop/2016SP/CSE390/train.txt");
+		System.out.println("type in file path:     e.g.   /Users/xxx/Desktop/2016SP/CSE390/train.txt");
 		
-		Scanner input = new Scanner(System.in); //     /Users/jx/Desktop/2016SP/CSE390/train.txt
+		Scanner input = new Scanner(System.in); 
 		
 		String fileName = input.next();
-		//String fileName = "/Users/jx/Desktop/2016SP/CSE390/train.txt"; // use this one for testing
 		
 		String[] sentence = null;
 		try {
