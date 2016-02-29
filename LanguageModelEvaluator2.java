@@ -18,16 +18,13 @@ public class LanguageModelEvaluator2 {
 
 		Scanner input = new Scanner(System.in);
 		
-		System.out.println(" language Model file path:       e.g. /Users/jx/Documents/workspace/git/CSE390HomeWork/language_model_file.txt");
-		String languageModelFile = input.next(); // e.g. /Users/jx/Documents/workspace/git/CSE390HomeWork/language_model_file.txt
+		System.out.println(" language Model file path:       e.g. /Users/xxx/Documents/workspace/language_model_file.txt");
+		String languageModelFile = input.next(); 
 		
-		//String languageModelFile = "/Users/jx/Documents/workspace/git/CSE390HomeWork/language_model_file.txt";
 		BigramQueryApplication2.readLanguageModelFileToDictionary(languageModelFile);
 		
-		System.out.println(" test file path:         e.g.  /Users/jx/Desktop/2016SP/CSE390/test.txt");  //   e.g.  /Users/jx/Desktop/2016SP/CSE390/test.txt
+		System.out.println(" test file path:      "); 
 		String testFileName = input.next();
-		
-		//String testFileName = "/Users/jx/Desktop/2016SP/CSE390/test.txt";
 		
 		String[] testFileSentence = null;
 		try {
