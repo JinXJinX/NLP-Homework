@@ -21,10 +21,8 @@ public class BigramQueryApplication2 {
 
 		Scanner input = new Scanner(System.in);
 		
-		System.out.println("language model txt file path:          e.g.  /Users/jx/Documents/workspace/git/CSE390HomeWork/language_model_file.txt");//     /Users/jx/Documents/workspace/git/CSE390HomeWork/language_model_file.txt
-		String fileName = input.next();
+		System.out.println("language model txt file path:          e.g.  /Users/xxx/Documents/workspace/git/CSE390HomeWork/language_model_file.txt");//    
 		
-		//String fileName = "/Users/jx/Documents/workspace/git/CSE390HomeWork/language_model_file.txt";
 		readLanguageModelFileToDictionary(fileName);
 		System.out.println("choose estimate desired: 1. MLE   2. Laplace   3.Katz backoff 4.UnigramAD (use number only)");
 		int estimationMethodsPrefer = input.nextInt();
@@ -41,8 +39,6 @@ public class BigramQueryApplication2 {
 		}else{
 			System.out.println("invalid input!");
 		}
-		//System.out.println(dictionary.size());
-		//System.out.println("N: " +N +" V: " + V);	
 
 	}
 	
